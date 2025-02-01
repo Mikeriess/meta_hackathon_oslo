@@ -40,7 +40,7 @@ def main(args):
     formatted_dataset.push_to_hub(f"MykMaks/{yourdatasetname}")
 
     # Save the formatted dataset to disk in Parquet format
-    formatted_dataset.set_format(type='parquet')
+    formatted_dataset.set_format(type='arrow')
     formatted_dataset.save_to_disk(path_to_save)
 
 

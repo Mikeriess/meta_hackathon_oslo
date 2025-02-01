@@ -11,6 +11,8 @@ def parse_args():
     parser.add_argument("--data_dir_mds", type=str, default='/home/theoo/meta_hackathon_oslo/convertpdf/output/markdown', help="Directory containing markdown files.")
     parser.add_argument("--dataset_name", type=str, default="fmsudgivelser", help="Name of the dataset.")
     parser.add_argument("--push_to_hub", type=bool, default=True, help="Whether to push the dataset to Hugging Face Hub (default: True).")
+    parser.add_argument("--language", type=str, default="dk", help="Language of the dataset (default: 'dk').")
+    parser.add_argument("--source", type=str, default="fm/udgivelser", help="Source of the dataset (default: 'fm/udgivelser').")
     return parser.parse_args()
 
 def read_image(image_path):
@@ -48,8 +50,8 @@ def main():
                 'original_question': "",
                 'original_answer': "",
                 'question': "Whats on this image?",
-                'language': "dk",
-                'source': f"fm/udgivelser"
+                'language': args.language,
+                'source': args.source
             })
 
     print(f"length of dataset: ", len(data))

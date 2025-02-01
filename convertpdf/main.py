@@ -129,7 +129,7 @@ def make_dataset(source_pdf):
 
 if __name__ == "__main__":
     # Get all pdf files in input folder
-    input_folder = "input"
+    input_folder = "input/updated"
     pdf_files = [f for f in os.listdir(input_folder) if f.endswith(".pdf")]
     # Process each PDF file
 

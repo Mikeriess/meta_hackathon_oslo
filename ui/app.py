@@ -3,7 +3,8 @@ import ollama
 
 @cl.on_chat_start
 async def start():
-    # Send initial message
+    # Initialize session history
+    cl.user_session.set("history", [])
     await cl.Message(
         content="Welcome! How can I assist you today?"
     ).send()
@@ -12,6 +13,7 @@ async def start():
 async def main(message: cl.Message):
     try:
         image_elements = message.elements
+        history = cl.user_session.get("history")
         
         if image_elements:
             for image in image_elements:
@@ -24,7 +26,7 @@ async def main(message: cl.Message):
                     
                     response = ollama.chat(
                         model='x/llama3.2-vision',  # Update model name as needed
-                        messages=[
+                        messages=history + [
                             {
                                 'role': 'user',
                                 'content': 'What is in this image?',
@@ -32,6 +34,10 @@ async def main(message: cl.Message):
                             },
                         ],
                     )
+                    
+                    history.append({'role': 'user', 'content': 'What is in this image?', 'images': [image_data]})
+                    history.append({'role': 'assistant', 'content': response['message']['content']})
+                    cl.user_session.set("history", history)
                     
                     await cl.Message(
                         content=response['message']['content'],
@@ -50,13 +56,17 @@ async def main(message: cl.Message):
         else:
             response = ollama.chat(
                 model='x/llama3.2-vision',  # Update model name as needed
-                messages=[
+                messages=history + [
                     {
                         'role': 'user',
                         'content': message.content,
                     },
                 ],
             )
+            
+            history.append({'role': 'user', 'content': message.content})
+            history.append({'role': 'assistant', 'content': response['message']['content']})
+            cl.user_session.set("history", history)
             
             await cl.Message(
                 content=response['message']['content']

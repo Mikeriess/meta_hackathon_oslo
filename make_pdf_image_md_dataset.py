@@ -19,13 +19,19 @@ def read_image(image_path):
     """Read an image file and convert it to RGB."""
     return PILImage.open(image_path).convert('RGB')
 
-def read_markdown(md_path):
+def convert_markdown_to_cleantext(md_path):
     """Read a markdown file and convert it to plain text."""
     with open(md_path, 'r', encoding='utf-8') as file:
         md_content = file.read()
     html_content = markdown.markdown(md_content)
     soup = BeautifulSoup(html_content, "html.parser")
     return soup.get_text()
+
+def read_markdown(md_path):
+    """Read a markdown file and return the raw markdown text."""
+    with open(md_path, 'r', encoding='utf-8') as file:
+        md_content = file.read()
+    return md_content
 
 def main():
     args = parse_args()

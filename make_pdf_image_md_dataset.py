@@ -52,7 +52,7 @@ def main():
             caption = read_markdown(md_path)
             data.append({
                 'image': image,  
-                'solution': caption,
+                'solution': {"text":caption},
                 'original_question': "",
                 'original_answer': "",
                 'question': "Whats on this image?",

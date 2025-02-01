@@ -1,0 +1,2 @@
+ollama==0.4.7
+chainlit==2.0.603

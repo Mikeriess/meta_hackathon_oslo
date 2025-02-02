@@ -7,8 +7,8 @@ We expect this line of work to help businesses, government institutions and citi
 
 # In these collections you will find:
 - 💽 Datasets for final fine-tune 
-  - 🇳🇴 [MykMaks/NorwegianDataset-compressed](https://huggingface.co/datasets/MykMaks/NorwegianDataset-compressed)
-  - 🇩🇰 [MykMaks/fmsudgivelser](https://huggingface.co/datasets/MykMaks/fmsudgivelser)
+  - 🇳🇴 [NorwegianDataset Collection](https://huggingface.co/collections/MykMaks/datasets-nb-679f081d89be13de6a9fe71b): A collection of datasets from the national library of Norway with a focus on complex diagrams and tables.
+  - 🇩🇰 [FMs Udgivelser](https://huggingface.co/collections/MykMaks/datasets-da-679f07b68e587e67bba71fdd): The Danish Ministry of Finance's reports with numbers, complex diagrams and tables.
 - [Prompts for finetune](https://github.com/Mikeriess/meta_hackathon_oslo/blob/main/llama_32_finetuning/docker_vm/workspace/experiments.json) used with **SFTTrainer** and **UnslothVisionDataCollator**
   - **MykMaks/fmsudgivelser**: Beskriv venligst dette billede.
   - **MykMaks/NorwegianDataset-compressed**
@@ -39,10 +39,10 @@ We expect this line of work to help businesses, government institutions and citi
 - 💾 Training code for finetune
   - MM checkpoints: https://github.com/Mikeriess/llama33_resources/tree/MM-models
   - V-I checkpoints: https://github.com/Mikeriess/llama33_resources/tree/v-i-models
-- 🤖 Model LORA-adapter checkpoints for Llama-3.2-11B-Vision-Instruct
-  - The model is iteratively trained over all datasets:
+- 🤖 [Finetuned models from LORA-adapter checkpoints of Llama-3.2-11B-Vision-Instruct](https://huggingface.co/collections/MykMaks/models-679f08ab3ea3e21df62c87e8)
+  - The model is iteratively trained over all datasets
     - The suffix of each file denotes the order of the checkpoint, along with the dataset that it was fine-tuned on
 - 💸 Final merged model:
-  - [Llama-3.2-11B-Vision-Instruct-MykMaks](https://huggingface.co/MykMaks)
+  - [Llama-3.2-11B-Vision-Instruct-MykMaks]((https://huggingface.co/MykMaks/llama-3.2-11B-MM-20-MykMaks_da-wit-merged))
 
-  See more at https://huggingface.co/MykMaks
+See more MykMaks hackathon data and contribute to the open-source community at [huggingface](https://huggingface.co/MykMaks)

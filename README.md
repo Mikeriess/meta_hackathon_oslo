@@ -9,7 +9,7 @@ We expect this line of work to help businesses, government institutions and citi
 - 💽 Datasets for final fine-tune 
   - 🇳🇴 [MykMaks/NorwegianDataset-compressed](https://huggingface.co/datasets/MykMaks/NorwegianDataset-compressed)
   - 🇩🇰 [MykMaks/fmsudgivelser](https://huggingface.co/datasets/MykMaks/fmsudgivelser)
-- Prompts for finetune
+- [Prompts for finetune](https://github.com/Mikeriess/meta_hackathon_oslo/blob/main/llama_32_finetuning/docker_vm/workspace/experiments.json) used with **SFTTrainer** and **UnslothVisionDataCollator**
   - **MykMaks/fmsudgivelser**: Beskriv venligst dette billede.
   - **MykMaks/NorwegianDataset-compressed**
     - Vennligst beskriv hva du ser i dette bildet.
@@ -18,10 +18,24 @@ We expect this line of work to help businesses, government institutions and citi
   - **MykMaks/da-wit**
     - Beskriv hvad du ser i dette billede.
   - **MykMaks/NorwegianDataset-compressed-pt2**
-    - Transkriber dette dokumentet
-    - Produser markdown text fra dette dokumentet
-    - Gjør en transkripsjon av bildet
-    - (continue listing all prompts...)
+    - "Transkriber dette dokumentet"
+    - "Produser markdown text fra dette dokumentet"
+    - "Gjør en transkripsjon av bildet"
+    - "Hva står det her?",
+    - "Gi meg et dokument med teksten i dette bildet",
+    - "Skriv ned så nøyaktig du kan hva som står her",
+    - "OCR dette bildet",
+    - "Utfør OCR og vis dokumentet som markdown",
+    - "Kan du lese og vise meg dette dokumentet",
+    - Hva står i bildet",
+    - "Gi meg teksten her",
+    - "Gjennskap bildet i markdown",
+    - "Les nøye igjennom og transkriber dokumentet",
+    - "Hei, kan du fortelle meg hva som står her.",
+    - "Gjør bildet om til tekst.",
+    - "Transkriber",
+    - "Gjør om til tekst",
+    - "Les dette og gjennskap som markdown"
 - 💾 Training code for finetune
   - MM checkpoints: https://github.com/Mikeriess/llama33_resources/tree/MM-models
   - V-I checkpoints: https://github.com/Mikeriess/llama33_resources/tree/v-i-models

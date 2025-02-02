@@ -1,11 +1,13 @@
 # 🇳🇴+🇩🇰 Open Source Vision Language Model assets
-Building on the philosophy of open source with the Llama-models 🦙, this repo is an effort to support development of small VLM's in the Scandinavian languages. Aa we are only fluent in Norwegian and Danish, we have focused on these two languages. However, we encourgage the community (🇫🇮🇸🇪🇫🇴🇮🇸🇬🇱Sami) to help build on our work and extend the coverage. 
+Building on the philosophy of open source with the Llama-models 🦙, this repo is an effort to support development of small VLM's in the Scandinavian languages. Aa we are only fluent in Norwegian and Danish, we have focused on these two languages. However, we encourgage the community to help build on our work and extend the coverage. 
 
 The current models and data focus on transcription and annotiation of documents in Norwegian and Danish, going beyond the limitations of OCR.
 
-We expect this line of work to help businesses, government institutions and citizens alike. Please se <repo> for how to run inference on the final models.
+Code is seperated into [data preperation/processing](/data-preperation/) and [finetuning a Vision LLM on a single GPU](/llama_32_finetuning/).
 
-# In these collections you will find:
+We expect this line of work to help businesses, government institutions and citizens alike. Please see this chainlit documentation and video for how to run inference on the final models.
+
+# From this MyMaks Hackathon you can find a model than can transcribe Norwegian and Danish images
 - 💽 Datasets for final fine-tune 
   - 🇳🇴 [NorwegianDataset Collection](https://huggingface.co/collections/MykMaks/datasets-nb-679f081d89be13de6a9fe71b): A collection of datasets from the national library of Norway with a focus on complex diagrams and tables.
   - 🇩🇰 [FMs Udgivelser](https://huggingface.co/collections/MykMaks/datasets-da-679f07b68e587e67bba71fdd): The Danish Ministry of Finance's reports with numbers, complex diagrams and tables.

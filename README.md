@@ -10,8 +10,18 @@ We expect this line of work to help businesses, government institutions and citi
   - 🇳🇴 [MykMaks/NorwegianDataset-compressed](https://huggingface.co/datasets/MykMaks/NorwegianDataset-compressed)
   - 🇩🇰 [MykMaks/fmsudgivelser](https://huggingface.co/datasets/MykMaks/fmsudgivelser)
 - Prompts for finetune
-  -
-  -
+  - **MykMaks/fmsudgivelser**: Beskriv venligst dette billede.
+  - **MykMaks/NorwegianDataset-compressed**
+    - Vennligst beskriv hva du ser i dette bildet.
+    - Transkriber dette dokumentet
+    - Produser markdown text fra dette dokumentet
+  - **MykMaks/da-wit**
+    - Beskriv hvad du ser i dette billede.
+  - **MykMaks/NorwegianDataset-compressed-pt2**
+    - Transkriber dette dokumentet
+    - Produser markdown text fra dette dokumentet
+    - Gjør en transkripsjon av bildet
+    - (continue listing all prompts...)
 - 💾 Training code for finetune
   - MM checkpoints: https://github.com/Mikeriess/llama33_resources/tree/MM-models
   - V-I checkpoints: https://github.com/Mikeriess/llama33_resources/tree/v-i-models

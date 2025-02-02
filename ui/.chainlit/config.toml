@@ -53,7 +53,7 @@ edit_message = true
 
 [UI]
 # Name of the assistant.
-name = "Assistant"
+name = "LLaMa 11b Norwegian Vision"
 
 # default_theme = "dark"
 

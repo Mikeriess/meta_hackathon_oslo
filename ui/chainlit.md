@@ -1,14 +1,21 @@
-# Welcome to Chainlit! 🚀🤖
+# meta_hackathon_oslo
 
-Hi there, Developer! 👋 We're excited to have you on board. Chainlit is a powerful tool designed to help you prototype, debug and share applications built on top of LLMs.
+# 🇳🇴🇩🇰 Open Source Vision Language Model assets
+Building on the philosophy of open source with the Llama-models 🦙, this repo is an effort to support development of small VLM's in the Scandinavian languages. Aa we are only fluent in Norwegian and Danish, we have focused on these two languages. However, we encourgage the community (🇫🇮🇸🇪🇫🇴🇮🇸🇬🇱Sami) to help build on our work and extend the coverage. 
 
-## Useful Links 🔗
+The current models and data focus on transcription and annotiation of documents in Norwegian and Danish, going beyond the limitations of OCR.
 
-- **Documentation:** Get started with our comprehensive [Chainlit Documentation](https://docs.chainlit.io) 📚
-- **Discord Community:** Join our friendly [Chainlit Discord](https://discord.gg/k73SQ3FyUh) to ask questions, share your projects, and connect with other developers! 💬
+We expect this line of work to help businesses, government institutions and citizens alike. Please se <repo> for how to run inference on the final models.
 
-We can't wait to see what you create with Chainlit! Happy coding! 💻😊
-
-## Welcome screen
-
-To modify the welcome screen, edit the `chainlit.md` file at the root of your project. If you do not want a welcome screen, just leave this file empty.
+# In these collections you will find:
+- 💽 Datasets for fine-tuning VLM
+  - 🇳🇴 MykMaks/NorwegianDataset-compressed
+  - 🇩🇰 MykMaks/fmsudgivelser
+- 💾 Training code
+  - MM checkpoints: https://github.com/mikeriess/llama33_resources/
+  - V-I checkpoints: https://github.com/mikeriess/llama33_resources/
+- 🤖 Model LORA-adapter checkpoints for Llama-3.2-11B-Vision-Instruct
+  - The model is iteratively trained over all datasets:
+    - The suffix of each file denotes the order of the checkpoint, along with the dataset that it was fine-tuned on
+- 💸 Final merged model:
+  - <b>Llama-3.2-11B-Vision-Instruct-MykMaks</b>

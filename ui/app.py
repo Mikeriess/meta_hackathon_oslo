@@ -6,7 +6,7 @@ async def start():
     # Initialize session history
     cl.user_session.set("history", [])
     await cl.Message(
-        content="Welcome! How can I assist you today?"
+        content="Welcome! Test out Llama3.2-Vision-MykMaks!"
     ).send()
 
 @cl.on_message

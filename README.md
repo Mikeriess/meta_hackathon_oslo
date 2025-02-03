@@ -1,3 +1,5 @@
+**NOTE:** This is the submission of team "MykMaks" at the Meta Llama Hackathon in Oslo 2025.
+
 # 🇳🇴+🇩🇰 Open Source Vision Language Model assets
 Building on the philosophy of open source with the Llama-models 🦙, this repo is an effort to support development of small VLM's in the Scandinavian languages. Aa we are only fluent in Norwegian and Danish, we have focused on these two languages. However, we encourgage the community to help build on our work and extend the coverage. 
 
@@ -7,7 +9,7 @@ Code is seperated into [data preperation/processing](/data-preperation/) and [fi
 
 We expect this line of work to help businesses, government institutions and citizens alike. Please see this chainlit documentation and video for how to run inference on the final models.
 
-# From this MyMaks Hackathon you can find a model than can transcribe Norwegian and Danish images
+# Markdown transcription of Norwegian and Danish images
 - 💽 Datasets for final fine-tune
   - 🇳🇴 [Norwegian dataset collection](https://huggingface.co/collections/MykMaks/datasets-nb-679f081d89be13de6a9fe71b): A collection of Norwegian datasets with a focus on complex diagrams and tables.
   - 🇩🇰 [Danish dataset collection](https://huggingface.co/collections/MykMaks/datasets-da-679f07b68e587e67bba71fdd): Data from newspapers and the Danish Ministry of Finance's reports with numbers, complex diagrams and tables.
